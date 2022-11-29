@@ -14,8 +14,8 @@
                   <tr *ngFor="let i of passenger.data">
                     <td>{{i.name}}</td>
                     <td>{{i.trips}}</td>
-                    <td>{{i.airline.name}}</td>
-                    <td>{{i.airline.country}}</td>
+                    <td>{{i.airline[0].name}}</td>
+                    <td>{{i.airline[0].country}}</td>
                   </tr>
                 </tbody>
               </table>
