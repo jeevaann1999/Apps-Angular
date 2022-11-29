@@ -9,6 +9,7 @@ import { ViewUserInfoComponent } from './view-user-info/view-user-info.component
 import { NavigationComponent } from './navigation/navigation.component';
 import { RouterModule, Routes } from '@angular/router';
 import { ViewProductComponent } from './view-product/view-product.component';
+import { HttpClientModule } from '@angular/common/http'
 
 const myRoute:Routes=
 [
@@ -43,7 +44,8 @@ const myRoute:Routes=
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule.forRoot(myRoute)
+    RouterModule.forRoot(myRoute),
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
