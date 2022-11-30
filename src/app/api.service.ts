@@ -28,4 +28,9 @@ export class ApiService {
   {
     return this.http.get("https://dummyjson.com/products")
   }
+
+  fetchUserData=()=>
+  {
+    return this.http.get("https://dummyjson.com/users")
+  }
 }
