@@ -10,7 +10,8 @@ import { NavigationComponent } from './navigation/navigation.component';
 import { RouterModule, Routes } from '@angular/router';
 import { ViewProductComponent } from './view-product/view-product.component';
 import { HttpClientModule } from '@angular/common/http';
-import { ViewUserDataComponent } from './view-user-data/view-user-data.component'
+import { ViewUserDataComponent } from './view-user-data/view-user-data.component';
+import { ViewToDoComponent } from './view-to-do/view-to-do.component'
 
 const myRoute:Routes=
 [
@@ -33,6 +34,10 @@ const myRoute:Routes=
 {
   path:"userdata",
   component:ViewUserDataComponent
+},
+{
+  path:"todo",
+  component:ViewToDoComponent
 }
 ]
 
@@ -45,7 +50,8 @@ const myRoute:Routes=
     ViewUserInfoComponent,
     NavigationComponent,
     ViewProductComponent,
-    ViewUserDataComponent
+    ViewUserDataComponent,
+    ViewToDoComponent
   ],
   imports: [
     BrowserModule,
