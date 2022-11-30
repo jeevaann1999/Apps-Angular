@@ -9,7 +9,8 @@ import { ViewUserInfoComponent } from './view-user-info/view-user-info.component
 import { NavigationComponent } from './navigation/navigation.component';
 import { RouterModule, Routes } from '@angular/router';
 import { ViewProductComponent } from './view-product/view-product.component';
-import { HttpClientModule } from '@angular/common/http'
+import { HttpClientModule } from '@angular/common/http';
+import { ViewUserDataComponent } from './view-user-data/view-user-data.component'
 
 const myRoute:Routes=
 [
@@ -28,6 +29,10 @@ const myRoute:Routes=
 {
   path:"product",
   component:ViewProductComponent
+},
+{
+  path:"userdata",
+  component:ViewUserDataComponent
 }
 ]
 
@@ -39,7 +44,8 @@ const myRoute:Routes=
     ViewPublicDataComponent,
     ViewUserInfoComponent,
     NavigationComponent,
-    ViewProductComponent
+    ViewProductComponent,
+    ViewUserDataComponent
   ],
   imports: [
     BrowserModule,
